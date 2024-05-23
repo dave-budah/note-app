@@ -36,5 +36,24 @@
     {{ $slot }}
 </div>
 </body>
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const wrapper = document.querySelector('.wrapper');
+    const closeIcon = document.querySelector('.close-icon');
+
+    // Function to close the wrapper
+    function closeWrapper() {
+        wrapper.classList.add('hide');
+        console.log('clicked')
+    }
+
+    // Event listener for click to close the wrapper
+    closeIcon.addEventListener('click', closeWrapper);
+
+    // Set a timer to close the wrapper after 5 seconds (5000 milliseconds)
+    setTimeout(closeWrapper, 5000);
+});
+
+    </script>
 </html>
 
