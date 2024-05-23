@@ -14,8 +14,8 @@
             <input type="text" class="form-control" id="title" name="title" value="{{ old('title') }}">
         </div>
         <div class="form-group">
-            <label for="body" class="form-label">Body</label>
-            <textarea class="form-control" id="body" name="body" rows="4">{{ old('body') }}</textarea>
+            <label for="body" class="form-label">Note</label>
+            <textarea class="form-control" id="body" name="body" rows="5">{{ old('body') }}</textarea>
         </div>
        <div class="flex items-center justify-end mt-4">
             <x-primary-button class="ms-3">
